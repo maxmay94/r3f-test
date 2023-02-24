@@ -6,8 +6,8 @@ import { useControls } from 'leva'
 function Background() {
 
   const bgControlsDepth = useControls('bgDepth', {
-    colorA: '#68b782',
-    colorB: '#8f5da0',
+    colorA: '#76d133',
+    colorB: '#cb885a',
     near: {
       value: 130,
       min: 0,

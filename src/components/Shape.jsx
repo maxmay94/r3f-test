@@ -9,9 +9,9 @@ function Shape() {
 
   const shapeControls = useControls('shapes', {
     baseColor: '#00330c',
-    colorA: '#000000',
-    colorB: '#5c689d',
-    colorFresnal: '#283452',
+    colorA: '#93590c',
+    colorB: '#d1a907',
+    colorFresnal: '#94a70f',
     noiseScale: {
       value: 1000,
       min: 0,
