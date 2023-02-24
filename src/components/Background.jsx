@@ -6,8 +6,8 @@ import { useControls } from 'leva'
 function Background() {
 
   const bgControlsDepth = useControls('bgDepth', {
-    colorA: '#7fc797',
-    colorB: '#e6c2f2',
+    colorA: '#68b782',
+    colorB: '#8f5da0',
     near: {
       value: 130,
       min: 0,
@@ -29,7 +29,7 @@ function Background() {
       max: 500
     },
     alpha: {
-      value: 0.2,
+      value: 0.25,
       min: 0,
       max: 1,
       step: 0.001
@@ -50,7 +50,7 @@ function Background() {
       step: 0.01
     }
   })
-  
+
   return (
     <>
       <Float floatIntensity={floatControls.intensity} speed={floatControls.speed} >

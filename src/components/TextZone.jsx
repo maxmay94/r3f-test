@@ -17,7 +17,7 @@ function TextZone() {
 
   const floatControls = useControls('textFloat', {
     speed: {
-      value: 0.1,
+      value: 0.5,
       min: 0,
       max: 10,
       step: 0.001

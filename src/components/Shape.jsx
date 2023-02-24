@@ -9,14 +9,27 @@ function Shape() {
 
   const shapeControls = useControls('shapes', {
     baseColor: '#00330c',
-    colorA: '#23600d',
-    colorB: '#44634c',
+    colorA: '#000000',
+    colorB: '#5c689d',
+    colorFresnal: '#283452',
     noiseScale: {
       value: 1000,
       min: 0,
       max: 1000,
       step: 1
-    }
+    },
+    noiseAlphaA: {
+      value: 0.05,
+      min: 0,
+      max: 1,
+      step: 0.001
+    },
+    noiseAlphaB: {
+      value: 0.05,
+      min: 0,
+      max: 1,
+      step: 0.001
+    },
   })
 
   const [speed] = useState(() => 0.1 + Math.random() / 5)
@@ -31,7 +44,7 @@ function Shape() {
             <Depth 
               colorA={shapeControls.colorA}
               colorB={shapeControls.colorB}
-              alpha={0.5}
+              alpha={shapeControls.noiseAlphaA}
               mode={'normal'}
               near={0}
               far={2}
@@ -40,7 +53,7 @@ function Shape() {
             <Depth 
               colorA={shapeControls.baseColor}
               colorB={shapeControls.colorB}
-              alpha={0.5}
+              alpha={shapeControls.noiseAlphaB}
               mode={'add'}
               near={3}
               far={2}
@@ -48,7 +61,7 @@ function Shape() {
             />
               <Fresnel 
                 mode={'add'} 
-                color={new THREE.Color('#E7B473').convertSRGBToLinear()} 
+                color={shapeControls.colorFresnal} 
                 intensity={0.3}
                 power={2.5}
                 bias={0.0}
