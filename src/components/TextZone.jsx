@@ -32,7 +32,7 @@ function TextZone() {
 
   return (
     <>
-    <Float floatIntensity={floatControls.intensity} speed={floatControls.speed}>
+      <Float floatIntensity={floatControls.intensity} speed={floatControls.speed}>
         <Text
           position={[textControls.position.x, textControls.position.y, -1]}
           material-toneMapped={false}
@@ -40,7 +40,8 @@ function TextZone() {
         >
           {textControls.text}
         </Text>
-    </Float>
+      </Float>
+
     </>
   )
 }
