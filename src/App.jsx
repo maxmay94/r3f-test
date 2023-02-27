@@ -1,9 +1,10 @@
-import { PresentationControls } from '@react-three/drei'
+import { PresentationControls, Html, Float, PivotControls } from '@react-three/drei'
 import { useControls } from 'leva'
 
 import Background from './components/Background'
 import TextZone from './components/TextZone'
 import Shape from './components/Shape'
+import Page from './components/Page'
 
 function App() {
 
@@ -44,7 +45,18 @@ function App() {
       >
       <TextZone />
       {shapes}
+
+
       </PresentationControls>
+      {/* //////////////////////////////////// */}
+      {/* <Float floatIntensity={0}>
+        <PivotControls activeAxes={[true, true, false]}>
+          <Html className=''  >
+            <Page />
+          </Html>
+        </PivotControls>
+      </Float> */}
+      {/* //////////////////////////////////// */}
     </>
   )
 }
