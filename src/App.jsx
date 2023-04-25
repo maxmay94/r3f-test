@@ -1,4 +1,4 @@
-import { PresentationControls, Html, Float, PivotControls } from '@react-three/drei'
+import { PresentationControls, Html, Float } from '@react-three/drei'
 import { useControls } from 'leva'
 
 import Background from './components/Background'
@@ -49,12 +49,10 @@ function App() {
 
       </PresentationControls>
       {/* //////////////////////////////////// */}
-      {/* <Float floatIntensity={0}>
-        <PivotControls activeAxes={[true, true, false]}>
-          <Html className=''  >
+      {/* <Float floatIntensity={4}>
+          <Html className='z-0'  >
             <Page />
           </Html>
-        </PivotControls>
       </Float> */}
       {/* //////////////////////////////////// */}
     </>
